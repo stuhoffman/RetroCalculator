@@ -13,6 +13,7 @@
 		20F7643C1C77DCE700C87083 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F7643B1C77DCE700C87083 /* Assets.xcassets */; };
 		20F7643F1C77DCE700C87083 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F7643D1C77DCE700C87083 /* LaunchScreen.storyboard */; };
 		20F764471C78159900C87083 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20F764461C78159900C87083 /* Minecraft.ttf */; };
+		20F764491C78229D00C87083 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 20F764481C78229D00C87083 /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		20F7643E1C77DCE700C87083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20F764401C77DCE700C87083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20F764461C78159900C87083 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		20F764481C78229D00C87083 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		20F764331C77DCE700C87083 /* RetroCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				20F764481C78229D00C87083 /* btn.wav */,
 				20F764341C77DCE700C87083 /* AppDelegate.swift */,
 				20F764361C77DCE700C87083 /* ViewController.swift */,
 				20F764381C77DCE700C87083 /* Main.storyboard */,
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20F764491C78229D00C87083 /* btn.wav in Resources */,
 				20F7643F1C77DCE700C87083 /* LaunchScreen.storyboard in Resources */,
 				20F7643C1C77DCE700C87083 /* Assets.xcassets in Resources */,
 				20F764471C78159900C87083 /* Minecraft.ttf in Resources */,
