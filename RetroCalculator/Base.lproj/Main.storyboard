@@ -24,11 +24,17 @@
                                     <constraint firstAttribute="width" secondItem="Yc5-si-JHk" secondAttribute="height" multiplier="1:1" id="Q3c-3U-lX2"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="58o-JY-QTe">
+                                <rect key="frame" x="-14" y="513" width="623" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="MRp-Cp-Ral"/>
+                                </constraints>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vaj-yg-Xw0">
                                 <rect key="frame" x="152" y="73" width="296" height="454"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="uQq-vL-cFz">
-                                        <rect key="frame" x="21.5" y="0.0" width="253" height="70"/>
+                                        <rect key="frame" x="22" y="0.0" width="253" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="253" id="41b-cx-mKT"/>
                                             <constraint firstAttribute="height" constant="70" id="Kbe-9G-HAW"/>
@@ -44,7 +50,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2Pm-eF-XgW">
-                                <rect key="frame" x="194" y="158.5" width="213" height="355"/>
+                                <rect key="frame" x="194" y="159" width="213" height="355"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="2x2-BU-5SZ">
                                         <rect key="frame" x="0.0" y="0.0" width="213" height="63"/>
@@ -197,12 +203,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2Pm-eF-XgW" firstAttribute="centerY" secondItem="vaj-yg-Xw0" secondAttribute="centerY" constant="36" id="88S-dn-7D3"/>
+                            <constraint firstItem="58o-JY-QTe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ab2-qv-kqX"/>
                             <constraint firstItem="Yc5-si-JHk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HPb-Ww-CdL"/>
+                            <constraint firstItem="58o-JY-QTe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NJH-kF-oZs"/>
                             <constraint firstItem="Yc5-si-JHk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OBB-TF-iLf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="58o-JY-QTe" secondAttribute="bottom" id="fs9-zc-r3r"/>
+                            <constraint firstAttribute="trailing" secondItem="58o-JY-QTe" secondAttribute="trailing" id="fuE-bP-DdL"/>
                             <constraint firstAttribute="trailing" secondItem="Yc5-si-JHk" secondAttribute="trailing" id="gwe-uK-zNr"/>
+                            <constraint firstAttribute="trailing" secondItem="58o-JY-QTe" secondAttribute="trailing" id="kMW-25-Xn3"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Yc5-si-JHk" secondAttribute="bottom" id="ngn-xH-qmW"/>
                             <constraint firstItem="2Pm-eF-XgW" firstAttribute="centerX" secondItem="vaj-yg-Xw0" secondAttribute="centerX" id="vHJ-rL-1US"/>
                             <constraint firstItem="vaj-yg-Xw0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vsR-V2-Jba"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="58o-JY-QTe" secondAttribute="bottom" id="xdH-A6-621"/>
                             <constraint firstItem="vaj-yg-Xw0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yR6-5f-0te"/>
                         </constraints>
                     </view>
@@ -228,6 +240,7 @@
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>
+        <image name="ground" width="888" height="72"/>
         <image name="multiply" width="111" height="114"/>
         <image name="space-bg" width="988" height="946"/>
         <image name="subtract" width="111" height="114"/>
