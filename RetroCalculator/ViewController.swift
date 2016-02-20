@@ -33,6 +33,8 @@ class ViewController: UIViewController {
     {
         playButtonSound()
         runningNumber += "\(btn.tag)"
+        print("New number Pressed = ",btn.tag)
+        updateOutputLabel()
     }
     
     
@@ -64,7 +66,9 @@ class ViewController: UIViewController {
     func updateOutputLabel()
     {
         outputLbl.text = "\(runningNumber)"
+        print("Running Number = \(runningNumber)")
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //init the sound file
