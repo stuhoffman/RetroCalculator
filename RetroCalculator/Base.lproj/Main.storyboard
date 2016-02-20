@@ -84,7 +84,7 @@
                                                     <constraint firstAttribute="height" constant="63" id="Ms7-qv-Mht"/>
                                                     <constraint firstAttribute="width" constant="61" id="w9f-Pq-eYp"/>
                                                 </constraints>
-                                                <state key="normal" image="7"/>
+                                                <state key="normal" image="4"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="484-yV-P0u">
                                                 <rect key="frame" x="76" y="0.0" width="61" height="63"/>
@@ -92,7 +92,7 @@
                                                     <constraint firstAttribute="height" constant="63" id="QUP-RN-TyZ"/>
                                                     <constraint firstAttribute="width" constant="61" id="br8-Pr-uzj"/>
                                                 </constraints>
-                                                <state key="normal" image="8"/>
+                                                <state key="normal" image="5"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRS-88-TOm">
                                                 <rect key="frame" x="152" y="0.0" width="61" height="63"/>
@@ -100,7 +100,7 @@
                                                     <constraint firstAttribute="width" constant="61" id="CJD-X3-DG5"/>
                                                     <constraint firstAttribute="height" constant="63" id="uJH-8s-JsD"/>
                                                 </constraints>
-                                                <state key="normal" image="9"/>
+                                                <state key="normal" image="6"/>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -113,7 +113,7 @@
                                                     <constraint firstAttribute="height" constant="63" id="8Nf-Lx-eUd"/>
                                                     <constraint firstAttribute="width" constant="61" id="TIQ-yp-nFB"/>
                                                 </constraints>
-                                                <state key="normal" image="7"/>
+                                                <state key="normal" image="1"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alW-Mf-ctE">
                                                 <rect key="frame" x="76" y="0.0" width="61" height="63"/>
@@ -121,7 +121,7 @@
                                                     <constraint firstAttribute="width" constant="61" id="78F-Mc-0UQ"/>
                                                     <constraint firstAttribute="height" constant="63" id="yOe-g6-O7Q"/>
                                                 </constraints>
-                                                <state key="normal" image="8"/>
+                                                <state key="normal" image="2"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxx-rY-siR">
                                                 <rect key="frame" x="152" y="0.0" width="61" height="63"/>
@@ -129,7 +129,7 @@
                                                     <constraint firstAttribute="height" constant="63" id="6Vk-Ap-spk"/>
                                                     <constraint firstAttribute="width" constant="61" id="6hO-Sc-dm7"/>
                                                 </constraints>
-                                                <state key="normal" image="9"/>
+                                                <state key="normal" image="3"/>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -142,7 +142,7 @@
                                                     <constraint firstAttribute="height" constant="63" id="jlA-LN-kvO"/>
                                                     <constraint firstAttribute="width" constant="61" id="rYi-jQ-Xqa"/>
                                                 </constraints>
-                                                <state key="normal" image="7"/>
+                                                <state key="normal" image="0"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOL-hG-mah">
                                                 <rect key="frame" x="76" y="0.0" width="61" height="63"/>
@@ -150,7 +150,7 @@
                                                     <constraint firstAttribute="height" constant="63" id="RCr-uv-qdX"/>
                                                     <constraint firstAttribute="width" constant="61" id="RqY-Np-zAi"/>
                                                 </constraints>
-                                                <state key="normal" image="8"/>
+                                                <state key="normal" image="divide"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxN-J5-ujQ">
                                                 <rect key="frame" x="152" y="0.0" width="61" height="63"/>
@@ -158,7 +158,7 @@
                                                     <constraint firstAttribute="height" constant="63" id="QvU-zi-U1W"/>
                                                     <constraint firstAttribute="width" constant="61" id="RtT-fZ-QQ9"/>
                                                 </constraints>
-                                                <state key="normal" image="9"/>
+                                                <state key="normal" image="multiply"/>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -171,7 +171,7 @@
                                                     <constraint firstAttribute="height" constant="63" id="L8E-xs-opz"/>
                                                     <constraint firstAttribute="width" constant="61" id="a8x-DW-g2k"/>
                                                 </constraints>
-                                                <state key="normal" image="7"/>
+                                                <state key="normal" image="subtract"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9GP-dL-OGc">
                                                 <rect key="frame" x="76" y="0.0" width="61" height="63"/>
@@ -179,7 +179,7 @@
                                                     <constraint firstAttribute="width" constant="61" id="CcB-Rk-X72"/>
                                                     <constraint firstAttribute="height" constant="63" id="iPj-RN-bFA"/>
                                                 </constraints>
-                                                <state key="normal" image="8"/>
+                                                <state key="normal" image="add"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Hi-jR-idj">
                                                 <rect key="frame" x="152" y="0.0" width="61" height="63"/>
@@ -187,7 +187,7 @@
                                                     <constraint firstAttribute="width" constant="61" id="IoH-tS-yvT"/>
                                                     <constraint firstAttribute="height" constant="63" id="xW4-s0-GRE"/>
                                                 </constraints>
-                                                <state key="normal" image="9"/>
+                                                <state key="normal" image="equal"/>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -213,11 +213,23 @@
         </scene>
     </scenes>
     <resources>
+        <image name="0" width="111" height="114"/>
+        <image name="1" width="111" height="114"/>
+        <image name="2" width="111" height="114"/>
+        <image name="3" width="111" height="114"/>
+        <image name="4" width="111" height="114"/>
+        <image name="5" width="111" height="114"/>
+        <image name="6" width="111" height="114"/>
         <image name="7" width="111" height="114"/>
         <image name="8" width="111" height="114"/>
         <image name="9" width="111" height="114"/>
+        <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
         <image name="counter" width="516" height="133"/>
+        <image name="divide" width="111" height="114"/>
+        <image name="equal" width="111" height="114"/>
+        <image name="multiply" width="111" height="114"/>
         <image name="space-bg" width="988" height="946"/>
+        <image name="subtract" width="111" height="114"/>
     </resources>
 </document>
