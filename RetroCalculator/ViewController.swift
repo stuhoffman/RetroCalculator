@@ -39,27 +39,49 @@ class ViewController: UIViewController {
     
     
     @IBAction func onDividePressed(sender: AnyObject) {
-        playButtonSound()
+        processOperation(Operation.Divide)
     }
     
     @IBAction func onMultiplyPressed(sender: AnyObject) {
-        playButtonSound()
+        processOperation(Operation.Multiply)
     }
     
     @IBAction func onSubtractPressed(sender: AnyObject) {
-        playButtonSound()
+        processOperation(Operation.Subtract)
     }
     
     @IBAction func onAddPressed(sender: AnyObject) {
-        playButtonSound()
+        processOperation(Operation.Add)
     }
     
     @IBAction func onEqualPressed(sender: AnyObject) {
-        playButtonSound()
+        processOperation(Operation.Equals)
     }
     
+    func processOperation(op: Operation)
+    {
+        playButtonSound()
+        if currentOperation != Operation.Empty
+        {
+            //do some math
+            print("Continuing operation \(op) runningNumber=\(runningNumber)")
+        } else
+        {
+            print("First use of operation  \(op) storing \(runningNumber) on left")
+            //first time so just display a result
+            leftValStr = runningNumber
+            runningNumber = ""
+            currentOperation = op
+        }
+        
+    }
     func playButtonSound()
     {
+        //to stop clipping
+        if btnSound.playing
+        {
+            btnSound.stop()
+        }
         btnSound.play()
     }
     
