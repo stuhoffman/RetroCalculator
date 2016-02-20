@@ -25,6 +25,7 @@ class ViewController: UIViewController {
     var leftValStr = ""
     var rightValStr = ""
     var currentOperation: Operation = Operation.Empty
+    var result = ""
     
     //Outlets
     @IBOutlet weak var outputLbl: UILabel!
@@ -34,7 +35,7 @@ class ViewController: UIViewController {
         playButtonSound()
         runningNumber += "\(btn.tag)"
         print("New number Pressed = ",btn.tag)
-        updateOutputLabel()
+        updateOutputLabel(runningNumber)
     }
     
     
@@ -55,7 +56,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onEqualPressed(sender: AnyObject) {
-        processOperation(Operation.Equals)
+        processOperation(currentOperation)
     }
     
     func processOperation(op: Operation)
@@ -64,7 +65,31 @@ class ViewController: UIViewController {
         if currentOperation != Operation.Empty
         {
             //do some math
-            print("Continuing operation \(op) runningNumber=\(runningNumber)")
+            if runningNumber != ""
+            {
+                print("Continuing operation \(op) runningNumber=\(runningNumber)")
+                rightValStr = runningNumber
+                runningNumber = ""
+                
+                //User selected  a second operator without entering a number
+                if currentOperation == Operation.Multiply
+                {
+                    result = "\(Double(leftValStr)! * Double(rightValStr)!)"
+                } else if currentOperation == Operation.Divide
+                {
+                    result = "\(Double(leftValStr)! / Double(rightValStr)!)"
+                } else if currentOperation == Operation.Add
+                {
+                    result = "\(Double(leftValStr)! + Double(rightValStr)!)"
+                } else if currentOperation == Operation.Subtract
+                {
+                    result = "\(Double(leftValStr)! - Double(rightValStr)!)"
+                }
+                leftValStr = result
+                updateOutputLabel(result)
+
+            }
+            currentOperation = op
         } else
         {
             print("First use of operation  \(op) storing \(runningNumber) on left")
@@ -85,10 +110,10 @@ class ViewController: UIViewController {
         btnSound.play()
     }
     
-    func updateOutputLabel()
+    func updateOutputLabel(val: String)
     {
-        outputLbl.text = "\(runningNumber)"
-        print("Running Number = \(runningNumber)")
+        outputLbl.text = "\(val)"
+        print("Running Number = \(val)")
     }
     
     override func viewDidLoad() {
