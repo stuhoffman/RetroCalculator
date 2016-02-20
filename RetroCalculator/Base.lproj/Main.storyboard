@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Minecraft.ttf">
+            <string>Minecraft</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -199,6 +204,15 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="4566" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1C-9B-Nry">
+                                <rect key="frame" x="209" y="94" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="S4N-fL-Paw"/>
+                                    <constraint firstAttribute="width" constant="200" id="r40-as-oR2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -211,6 +225,8 @@
                             <constraint firstAttribute="trailing" secondItem="58o-JY-QTe" secondAttribute="trailing" id="fuE-bP-DdL"/>
                             <constraint firstAttribute="trailing" secondItem="Yc5-si-JHk" secondAttribute="trailing" id="gwe-uK-zNr"/>
                             <constraint firstAttribute="trailing" secondItem="58o-JY-QTe" secondAttribute="trailing" id="kMW-25-Xn3"/>
+                            <constraint firstItem="2Pm-eF-XgW" firstAttribute="centerY" secondItem="d1C-9B-Nry" secondAttribute="centerY" constant="225" id="kPv-S4-3Xv"/>
+                            <constraint firstItem="2Pm-eF-XgW" firstAttribute="centerX" secondItem="d1C-9B-Nry" secondAttribute="centerX" id="mfc-SU-lFF"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Yc5-si-JHk" secondAttribute="bottom" id="ngn-xH-qmW"/>
                             <constraint firstItem="2Pm-eF-XgW" firstAttribute="centerX" secondItem="vaj-yg-Xw0" secondAttribute="centerX" id="vHJ-rL-1US"/>
                             <constraint firstItem="vaj-yg-Xw0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vsR-V2-Jba"/>
