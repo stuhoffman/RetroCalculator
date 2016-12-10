@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     //Outlets
     @IBOutlet weak var outputLbl: UILabel!
     //Actions
-    @IBAction func numberPressed(btn: UIButton)
+    @IBAction func numberPressed(_ btn: UIButton)
     {
         playButtonSound()
         runningNumber += "\(btn.tag)"
@@ -39,27 +39,27 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func onDividePressed(sender: AnyObject) {
+    @IBAction func onDividePressed(_ sender: AnyObject) {
         processOperation(Operation.Divide)
     }
     
-    @IBAction func onMultiplyPressed(sender: AnyObject) {
+    @IBAction func onMultiplyPressed(_ sender: AnyObject) {
         processOperation(Operation.Multiply)
     }
     
-    @IBAction func onSubtractPressed(sender: AnyObject) {
+    @IBAction func onSubtractPressed(_ sender: AnyObject) {
         processOperation(Operation.Subtract)
     }
     
-    @IBAction func onAddPressed(sender: AnyObject) {
+    @IBAction func onAddPressed(_ sender: AnyObject) {
         processOperation(Operation.Add)
     }
     
-    @IBAction func onEqualPressed(sender: AnyObject) {
+    @IBAction func onEqualPressed(_ sender: AnyObject) {
         processOperation(currentOperation)
     }
     
-    @IBAction func onClearPressed(sender: AnyObject) {
+    @IBAction func onClearPressed(_ sender: AnyObject) {
         playButtonSound()
         runningNumber = ""
         leftValStr = ""
@@ -70,7 +70,7 @@ class ViewController: UIViewController {
 
     }
     
-    func processOperation(op: Operation)
+    func processOperation(_ op: Operation)
     {
         playButtonSound()
         if currentOperation != Operation.Empty
@@ -114,14 +114,14 @@ class ViewController: UIViewController {
     func playButtonSound()
     {
         //to stop clipping
-        if btnSound.playing
+        if btnSound.isPlaying
         {
             btnSound.stop()
         }
         btnSound.play()
     }
     
-    func updateOutputLabel(val: String)
+    func updateOutputLabel(_ val: String)
     {
         outputLbl.text = "\(val)"
         print("Running Number = \(val)")
@@ -130,11 +130,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //init the sound file
-        let path = NSBundle.mainBundle().pathForResource("btn", ofType: "wav")
-        let soundUrl = NSURL(fileURLWithPath: path!)
+        let path = Bundle.main.path(forResource: "btn", ofType: "wav")
+        let soundUrl = URL(fileURLWithPath: path!)
         
         do {
-            try btnSound = AVAudioPlayer(contentsOfURL: soundUrl)
+            try btnSound = AVAudioPlayer(contentsOf: soundUrl)
             btnSound.prepareToPlay()
         } catch let err as NSError{
             print(err.debugDescription)
